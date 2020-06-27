@@ -58,14 +58,16 @@ data_tot2$Satisfaccion<-car::Recode(data_tot2$Satisfaccion, "1=4;2=3;3=2;4=1")
 data_tot3$Satisfaccion<-car::Recode(data_tot3$Satisfaccion, "1=4;2=3;3=2;4=1")
 ```
 
-#Abstract
+# Abstract
 
 El retorno a la democracia para los países de América se gestó con la promesa de que traería cambios positivos en diferentes facetas de la vida ciudadana. No obstante, debido a la forma de implementar los sistemas democráticos y condiciones externas como la globalización y el sistema económico mundial, se ha generado insatisfacción de las personas con el sistema democrático. Por lo anterior, resulta importante identificar cuáles son los factores que influyen en un mayor o menor nivel de satisfacción con la democracia en los países de América. Para poder profundizar en esta temática, se realizará un análisis multinivel y se utilizara una base de datos de elaboración propia a partir de las bases de datos de 21 países de América de LAPOP 2016, la cual cuenta con un (N=29.468) casos. Los resultados del análisis sugieren que los factores que generan una disminución en la satisfacción con la democracia son los altos niveles de corrupción y los casos de coimas/sobornos que existen al interior de los países, fundamentalmente en el mundo político, generando en consecuencia bajos niveles de satisfacción con la vida en los ciudadanos.
 
-#Introducción 
+# Introducción 
 
 Durante la segunda mitad del siglo XX, los países de América, específicamente América latina y el Caribe, experimentaron procesos de democratización en sus territorios generando que se consolide la democracia como sistema de gobierno, reemplazando al autoritarismo que se había establecido, en su gran mayoría, por dictaduras militares. Este régimen, se instaló de manera generalizada en América Latina por primera vez en su historia [@garretonmerino_Ciencias_2014]. La democracia, entendiendo por ello como un sistema de gobierno, fue el principal elemento en el proceso de modernización en los países de Latinoamérica, debido a la legitimidad política que adquiere en la época actual [@alister_Democracia_2015]. De esta manera, las democracias se han afianzado en la región por el peso de variables tanto internas como externas. Por un lado,  las primeras refieren a que este régimen se consolidó al interior de los países producto de la promesa de que este sistema traería consigo cambios positivos en diferentes facetas de la vida ciudadana [@olmeda_Que_2019]. Por otro lado, las segundas refieren a que se ve influenciada "por la globalización, instituciones internacionales y el sistema económico mundial". [@alister_Democracia_2015, P. 87]
+
 Sin embargo, en la actualidad, la democracia ha experimentado una profunda deslegitimación por parte de los ciudadanos, expresándose en un bajo nivel de satisfacción -o insatisfacción- de democracia que observan en sus respectivos países [@olmeda_Que_2019]. Lo anterior guarda relación con que los regímenes democráticos se instalaron en América Latina al alero de una crisis política, que refiere a la pérdida de legitimidad para organizar la vida en común, del principio de representación y de su capacidad de dar un sentido colectivo [@garretonmerino_Ciencias_2014]. Además, este bajo nivel de satisfacción es generada por la mala gestión de los gobiernos, la promoción de políticas gubernamentales que no generan mejoras en los aspectos de la vida de los ciudadanos y las violencias con las que se imponen y se mantienen las democracias en Latinoamérica. Estas características se engloban en un proceso denominado "desorden democrático" [@sanchez_Por_2004]. En este sentido, también hay otros factores que inciden en los niveles de la satisfacción con la democracia, como la corrupción, puesto que tiene un impacto significativo en la calidad de las democracias y en el desarrollo de los paises de Latinoamerica [@ramos_Control_2019]. Asimismo, el desarrollo económico de cada país guarda relación con la satisfacción de los niveles de democracia, ya que el desarrollo sostenido de la economía le otorga legitimidad y estabilidad [@diamond_RECONSIDERACION_1992]
+
 Con respecto a estudios anteriores, referidos al declive de la confianza en la democracia en América Latina, se pueden nombrar "El control de la corrupcion de America Latina" [@ramos_Control_2019], que refieren a cómo la corrupción impacta en la percepción de los ciudadanos respecto a las agendas políticas de los distintos países de la región. En esa misma línea, se puede nombrar "Corrupción en América Latina: entendiendo la brecha percepción-exposición" [@bohn_Corruption_2012], que explica la diferencia entre percepción y exposición a la corrupción, siendo la primera la que disminuye significativamente la satisfacción de los ciudadanos con la democracia, mientras que la última no lo hace. 
 
 Otro estudio que se relaciona es "Corrupción y Democracia" [@moralesquiroga_Corrupcion_2009], el cual se suma a que existe un amplio consenso de que la corrupción tiene un impacto negativo en la democracia, pero diferencia al considerar el impacto de la percepción y la victimización sobre los niveles de legitimidad y satisfacción con el régimen en los paises de America Latina. A lo anterior, también se suma lo estudiado por la corporación @latinobarometro_Informe_2018, donde estudia entre otras cosas, la satisfacción con la democracia en 18 países de América Latina con muestras representativas de la población nacional de cada país, de 1.000 y 1.200 casos, con un margen de error de alrededor del 3%. 
@@ -78,13 +80,13 @@ Las crisis políticas, de corrupción y económicas repercuten directamente en l
 
 Este trabajo se propone explicar percepciones de los ciudadanos respecto a su satisfacción con la democracia, mediante la aplicación de modelos multinivel puesto que se utilizan en sociología para especificar el efecto del contexto social en los resultados a nivel individual [@diprete_Multilevel_1994]. En efecto, se aplicará una estimación de interacción entre niveles, con la finalidad de dar cuenta de la variabilidad de la pendiente en función de una variable contextual, como también, conocer la moderación de la influencia por otra variable.  De este modo, la pregunta que guiará este estudio es ¿Cuáles son los factores que inciden mayormente en un mayor/menor nivel de satisfacción con la democracia en los países de América?. 
 
-#Objetivos e Hipótesis:
+# Objetivos e Hipótesis:
 
-###Objetivo central: 
+### Objetivo central: 
 
 El objetivo principal de la presente investigación es identificar cuales son los factores que influyen en un mayor o menor nivel de satisfacción con la democracia en países de América. 
 
-###Objetivos específicos:
+### Objetivos específicos:
 
 De este objetivo se desprenden los siguientes objetivos específicos: 
 
@@ -94,13 +96,13 @@ De este objetivo se desprenden los siguientes objetivos específicos:
 
 3. Dar cuenta de la diferencia del efecto de las variables independientes sobre la satisfacción con la democracia según las subdivisiones de América, en este caso América anglosajona (Canadá y EE.UU.) y América Latina y el Caribe. 
 
-###Hipótesis:
+### Hipótesis:
 
 Hipótesis de nivel 1:  A medida que se percibe una peor economía, una baja satisfacción con la vida y  una percepción de mayor corrupción política, se tiene una baja satisfacción con la democracia.
 
 Hipótesis de nivel 2: A medida que se percibe por país, una peor economía, una baja satisfacción con la vida y  una percepción de mayor corrupción política, se tiene, de manera agrupada,  una baja satisfacción con la democracia.
 
-#Metodología (datos, variables, métodos)
+# Metodología (datos, variables, métodos)
 
 La base de datos utilizada es una "elaboración propia" a partir de las bases de datos de 21 países de América de LAPOP 2016 y cuenta con 29.468 casos. Dentro de los países considerados se encuentran: Argentina, Bolivia, Brasil, Canadá, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Estados Unidos, Guatemala, Haití, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, República Dominicana, Uruguay y Venezuela.
 Las variable dependiente seleccionada se denomina como "Democracia" y se enfoca en la satisfacción que las personas tienen sobre el funcionamiento de la democracia en su país, con el valor 1 como  "Muy Insatisfecho(a)" y el valor 4 como "Muy Satisfecho(a)". 
@@ -142,13 +144,13 @@ La variable Sexo, donde 1 es Hombre y 2 Mujer, cuenta con una media de 1.5, es d
 Sin embargo, en la Tabla 1 no se incluyen la variable "Soborno" debido a que no está en la base de datos de todos los países de América, específicamente en  Canadá y EEUU. En igual forma, la variable "Educación"  no se incluye, debido a que esta posee una diferente escala de medición para cada país. 
  
 
-#Resultados
+# Resultados
 
 __Gráfico 1__ 
 
 ```{r echo=FALSE, results="hide", warning=FALSE, message=FALSE}
 data_tot2$Sexo<-car::Recode(data_tot2$Sexo, "1=1;2=2")
-data_tot2$Sexo<-factor(data_tot2$Sexo,labels=c("Hombre","Mujer"))
+data_tot2$Sexo<-factor(c(0,1),labels=c("Hombre","Mujer"))
 
 grafico_circulos=data_tot2 %>% select(Democracia, Corrupcion, Satisfaccion, Economia, Edad) %>% cor()
 ```
@@ -307,7 +309,7 @@ plot_model(reg_aleatoria.1.2.2, type = "int")
 Este resultado nos da pie a estimar un modelo con interacción entre variables, en este caso, la variable "Corrupción" (nivel 1) ya nombrada y "meancor" (nivel 2) el cual puede apreciarse en la tabla 8 y graficado en el el gráfico 3. Como se observa en la tabla 8, la pendiente de satisfacción con la democracia en relación con la percepción de corrupción individual será de -0.38 puntos con un 99.9% de significación en países con una percepción de la corrupción promedio a nivel grupal. Esto quiere decir que, en países que presenten un nivel de percepción de corrupción menor, o que sean más transparentes, la percepción sobre la corrupción de los ciudadanos influirá menos en la satisfacción que tengan con sus democracias, tal como se ve reflejado en el gráfico 3. Del mismo modo, en el gráfico también se da cuenta de que, los países con un nivel de percepción de corrupción menor al nivel general, tienen ciudadanos más satisfechos que países con índices de corrupción más alto. A modo de conclusión es preciso decir que, como se ve en la tabla 8, la relación entre la satisfacción con la democracia y la percepción individual de la corrupción se vuelve más fuerte 0.07 unidades en países con mayores índices de corrupción.
 
 
-#Conclusiones
+# Conclusiones
 
 Los principales hallazgos del estudio, en términos generales, señalan que, a mayor percepción de una peor economía, una baja satisfacción con la vida y  una percepción de mayor corrupción política, se tiene una menor satisfacción con la democracia.  Esto se expresa en que las variables Satisfacción -con la vida- aumenta en 0.09 unidades la satisfacción con la democracia y la variable Economía disminuye en 0.17 unidades la satisfacción con la democracia en promedio, por cada unidad que ellas aumenten. Por su parte, en la medida en que la variable Corrupción aumenta en una unidad, disminuye la satisfacción con la democracia en 0.14.
 
@@ -320,28 +322,5 @@ Dentro de las limitaciones y dificultades de este estudio encontramos las difere
 Finalmente pensando en futuras investigaciones en el área, y en línea con lo ya mencionado, se recomienda proceder con cautela en este tipo de análisis dado las diferencias internas entre los países de América, y también las diferencias que presentan en cuanto a producción de datos e indicadores que dificultan su integración dentro de un modelo a nivel continental. 
  
 
-#Bibliografía
+# Bibliografía
 
-Bohn, S. R. (2012). Corruption in Latin America: Understanding the perception-exposure gap. Journal of Politics in Latin America, 4(3), 67-95
-
-Corporación Latinobarómetro. (2018). Informe. Santiago de Chile. Recuperado de: http://www.latinobarometro.org/latdocs/INFORME_2018_LATINOBAROMETRO.pdf
-
-Diamond, L. (1992). Reconsideración del nexo entre desarrollo económico y democracia. American Behavioral Scientist, 35(45), 93-139.
-
-DiPrete, T. A., & Forristal, J. D. (1994). Multilevel models: methods and substance. Annual review of sociology, 20(1), 331-357.
-
-Garretón, M. A. (2014). Las Ciencias sociales en la trama de Chile y América Latina: Estudios sobre transformaciones socio-políticas y movimiento social. LOM ediciones.
-
-Martín, F. A. (1983). Perspectiva cualitativa - perspectiva cuantitativa en la metodología sociológica. Reis, (22), 53-75.
-
-Olmeda, J. (2019). ¿Qué hay detrás de la (in) satisfacción con la democracia en América Latina?. Oraculus. Recuperado de: https://oraculus.mx/2019/02/07/que-hay-detras-de-la-insatisfaccion-con-la-democracia-en-america-latina/
- 
-Quiroga, M. M. (2009). Corrupción y democracia. América Latina en perspectiva comparada. Gestión y Política Pública, 18(2), 205-252.
-
-Rollón, M. R., & García, F. J. Á. (2019). El control de la corrupción en América Latina. Documentos de Trabajo, 11, 2ª.
-
-Sánchez Parga, J. (2004). ¿ Por qué se deslegitima la democracia? El desorden democrático.
-
-Sanhueza, C. E. A., Sánchez, C. C., & Chinga, A. G. (2015). Democracia en Latinoamérica,¿ Qué factores influyen en la satisfacción y apoyo a la Democracia?. Fronteras-ISSN 0719-4285, 2(1), 85-113.
-
-Transparency International. (2019). El Índice de Percepción de la Corrupción muestra un estancamiento de la lucha contra la corrupción en la mayoría de los países. Berlín, Alemania. Recuperado de: https://www.transparency.org/news/pressrelease/el_indice_de_percepcion_de_la_corrupcion_2018
